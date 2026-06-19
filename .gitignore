@@ -1,0 +1,34 @@
+# Build output
+build/
+build-*/
+out/
+*.obj
+*.o
+*.exe
+*.pdb
+*.ilk
+*.lib
+*.a
+
+# NEVER commit VIC-20 cartridge / ROM data - bring your own dump you legally own
+*.zip
+*.crt
+*.prg
+*.bin
+*.a0
+*.20
+*.40
+*.60
+*.rom
+roms/
+_work/
+
+# Recompiled game C is a derivative of the original cartridge - never commit it
+**/generated/recomp_funcs.*
+
+# Editor / OS
+.vs/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
