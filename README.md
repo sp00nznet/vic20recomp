@@ -14,9 +14,9 @@ self-contained carts, *simpler* — machine around it.
 `vic20recomp` is the reusable toolkit. The games brought up on it live in
 separate repos that consume this one (via `-DVIC20RECOMP_DIR` or a submodule).
 
-- [`vic20-recomp`](../vic20-recomp) — *Jelly Monsters* (Commodore, 1981), the
-  VIC-20 Pac-Man clone, recompiled to native C and **rendering its maze in full
-  colour**, ~100% as recompiled code.
+- [`jellymonsters-vic20-recomp`](https://github.com/sp00nznet/jellymonsters-vic20-recomp)
+  — *Jelly Monsters* (Commodore, 1981), the VIC-20 Pac-Man clone, recompiled to
+  native C and **rendering its maze in full colour**, ~100% as recompiled code.
 
 > **No ROM data here.** VIC-20 cartridges and system ROMs are `.gitignore`d.
 > This repo is the recompiler, the runtime and docs — bring your own dump that
@@ -85,7 +85,7 @@ toolkit; this repo wires it to VIC-20 hardware.
   and a built-in font fallback for the (bring-your-own) CHARGEN ROM.
 - ✅ **Jelly Monsters renders** — boots from `$A01F`, runs **~100% as recompiled
   native C**, and draws its attract maze in full colour. See
-  [`vic20-recomp`](../vic20-recomp).
+  [`jellymonsters-vic20-recomp`](https://github.com/sp00nznet/jellymonsters-vic20-recomp).
 - 🚧 **VIA-timer IRQ + input** — model the 60 Hz timer IRQ and the keyboard/
   joystick matrix to drive gameplay (a static frame render needs neither).
 - 🚧 **Bring-your-own KERNAL/CHARGEN** — load real system ROMs so KERNAL-heavy
